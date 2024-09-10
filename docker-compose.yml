@@ -1,0 +1,27 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ml_app
+    volumes:
+      - .:/app
+    ports:
+      - "8501:8501"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:13
+    container_name: ml_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: f5_airlines
+    ports:
+      - "5433:5433"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

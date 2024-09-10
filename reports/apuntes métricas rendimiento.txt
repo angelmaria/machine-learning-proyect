@@ -1,0 +1,37 @@
+Gracias por compartir esta visualización. Voy a analizar cada gráfica y proporcionar conclusiones para cada una de ellas.
+
+Accuracy (Precisión):
+
+
+La precisión inicial (punto rojo) es alta, alrededor de 0.96.
+Durante la optimización, la precisión fluctúa entre 0.92 y 0.96.
+En general, la mayoría de los modelos optimizados mantienen una precisión similar o ligeramente inferior a la inicial.
+
+Conclusión: El modelo inicial ya tiene una buena precisión. La optimización no logra mejorar significativamente este valor, lo que sugiere que el modelo base ya era bastante efectivo.
+
+F1-Score:
+
+
+El F1-Score inicial (punto morado) es alto, cerca de 0.95.
+Durante la optimización, el F1-Score oscila entre 0.91 y 0.95.
+La mayoría de los modelos optimizados mantienen un F1-Score cercano al inicial.
+
+Conclusión: El F1-Score, que equilibra precisión y exhaustividad, se mantiene estable durante la optimización. Esto indica que el modelo conserva un buen equilibrio entre falsos positivos y falsos negativos.
+
+Precision (Precisión en el sentido de positivos verdaderos):
+
+
+La precisión inicial (punto azul claro) es muy alta, alrededor de 0.97.
+Durante la optimización, la precisión fluctúa principalmente entre 0.93 y 0.97.
+Algunos modelos optimizados alcanzan una precisión similar a la inicial, pero muchos son ligeramente inferiores.
+
+Conclusión: El modelo inicial tiene una excelente precisión. La optimización, en general, no mejora este aspecto, lo que sugiere que el modelo ya era muy bueno en evitar falsos positivos.
+
+Recall (Exhaustividad):
+
+
+El recall inicial (punto verde claro) es alto, cerca de 0.94.
+Durante la optimización, el recall varía considerablemente, desde 0.89 hasta 0.94.
+Hay más variabilidad en el recall que en otras métricas durante la optimización.
+
+Conclusión: El recall muestra la mayor variabilidad durante la optimización. Algunos modelos optimizados logran un recall similar al inicial, pero otros son significativamente inferiores. Esto sugiere que la optimización a veces sacrifica la capacidad del modelo para identificar todos los casos positivos.

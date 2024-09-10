@@ -1,0 +1,35 @@
+### Explicación de los Resultados
+
+El resultado de la evaluación del modelo proporciona varias métricas que ayudan a entender el rendimiento del modelo de clasificación. Aquí te explico cada una de las métricas y lo que significan:
+
+Precisión del Modelo
+Precisión del modelo: 0.9760
+
+La precisión del modelo es del 97.60%. Esto significa que el modelo clasifica correctamente el 97.60% de las instancias en el conjunto de datos.
+Reporte de Clasificación
+El reporte de clasificación proporciona métricas detalladas para cada clase (en este caso, 0 y 1).
+
+              precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98     58879
+           1       0.99      0.96      0.97     45025
+
+    accuracy                           0.98    103904
+   macro avg       0.98      0.97      0.98    103904
+weighted avg       0.98      0.98      0.98    103904
+
+Métricas por Clase
+Clase 0:
+Precision: 0.97 (El 97% de las predicciones para la clase 0 son correctas).
+Recall: 0.99 (El 99% de las instancias reales de la clase 0 son correctamente identificadas).
+F1-score: 0.98 (La media armónica de la precisión y el recall).
+Support: 58879 (El número de instancias reales de la clase 0 en el conjunto de datos).
+Clase 1:
+Precision: 0.99 (El 99% de las predicciones para la clase 1 son correctas).
+Recall: 0.96 (El 96% de las instancias reales de la clase 1 son correctamente identificadas).
+F1-score: 0.97 (La media armónica de la precisión y el recall).
+Support: 45025 (El número de instancias reales de la clase 1 en el conjunto de datos).
+Métricas Globales
+Accuracy: 0.98 (La precisión global del modelo, que es el porcentaje de instancias correctamente clasificadas).
+Macro avg: La media de las métricas (precisión, recall, F1-score) calculada de manera no ponderada para cada clase.
+Weighted avg: La media ponderada de las métricas (precisión, recall, F1-score), donde la ponderación es el número de instancias en cada clase.

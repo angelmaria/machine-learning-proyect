@@ -1,0 +1,15 @@
+build:
+  docker:
+    web: Dockerfile
+  config:
+    DATABASE_URL: postgres://postgres:admin@db:5432/f5_airlines
+
+run:
+  web: streamlit run app/main.py
+
+  build:
+  docker:
+    web: Dockerfile
+
+run:
+  web: streamlit run app/main.py

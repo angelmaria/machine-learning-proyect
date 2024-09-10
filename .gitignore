@@ -1,0 +1,7 @@
+# Ignorar entorno virtual
+venv/
+.env
+airline_satisfaction.csv
+.pkl
+env/
+__pycache__/
